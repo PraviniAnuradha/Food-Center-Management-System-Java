@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="text" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ce47ac64-33e4-4c34-8e64-940c5a06eb51">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<parameter name="Parameter1" class="java.lang.String"/>
+	<parameter name="Parameter2" class="java.lang.String"/>
+	<parameter name="Parameter3" class="java.lang.String"/>
+	<parameter name="Parameter4" class="java.lang.String"/>
+	<parameter name="Parameter5" class="java.lang.String"/>
+	<parameter name="Parameter6" class="java.lang.String"/>
+	<parameter name="Parameter7" class="java.lang.String"/>
+	<parameter name="Parameter8" class="java.lang.String"/>
+	<parameter name="Parameter9" class="java.lang.String"/>
+	<parameter name="Parameter10" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="COLUMN_0" class="java.lang.String"/>
+	<field name="COLUMN_1" class="java.lang.String"/>
+	<field name="COLUMN_2" class="java.lang.String"/>
+	<field name="COLUMN_3" class="java.lang.String"/>
+	<field name="COLUMN_4" class="java.lang.String"/>
+	<field name="COLUMN_5" class="java.lang.String"/>
+	<field name="COLUMN_6" class="java.lang.String"/>
+	<field name="COLUMN_7" class="java.lang.Double"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="151" splitType="Stretch">
+			<staticText>
+				<reportElement x="105" y="60" width="345" height="30" forecolor="#464763" uuid="23acba2f-fb55-4053-9f6e-7922d5b0748d"/>
+				<textElement textAlignment="Center">
+					<font fontName="Lucida Sans" size="20"/>
+				</textElement>
+				<text><![CDATA[Lanka Shopping Emporium]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="90" width="290" height="21" uuid="686c674f-e829-4553-b0b4-cce38be2e527"/>
+				<textElement>
+					<font fontName="Lucida Sans" size="12"/>
+				</textElement>
+				<text><![CDATA[2884 Wexford Way , Columbia , South Carolina        ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="111" width="271" height="21" uuid="8606b036-224c-495d-b446-87cdca8484f7"/>
+				<textElement>
+					<font fontName="Lucida Sans" size="11"/>
+				</textElement>
+				<text><![CDATA[Phone : +94773441062 Email :lse@gmail.com]]></text>
+			</staticText>
+			<image hAlign="Center">
+				<reportElement stretchType="ElementGroupHeight" x="0" y="-40" width="555" height="140" uuid="68dd864b-6333-47d9-8ec9-af8c24d241e7"/>
+				<imageExpression><![CDATA["C:/Users/CHAMA COMPUTERS/Documents/NetBeansProjects/Project_epal/src/resources/logo2-removebg-preview.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="37">
+			<rectangle>
+				<reportElement x="-20" y="12" width="595" height="17" backcolor="#70BCFA" uuid="78c4b5c3-8151-4af6-954f-7e934d71ed64"/>
+				<graphicElement>
+					<pen lineColor="#FFFFFF"/>
+				</graphicElement>
+			</rectangle>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement mode="Transparent" x="475" y="12" width="100" height="17" forecolor="#FFFFFF" uuid="1f91a3e1-424c-49ca-9831-47548af1b156"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="165">
+			<rectangle>
+				<reportElement x="-20" y="5" width="480" height="97" uuid="3249d158-e57d-4285-b8e5-23ac1407b5df"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="-10" y="10" width="120" height="12" uuid="ec95390e-cb47-4089-aa85-0a90f186d3b7"/>
+				<textElement>
+					<font fontName="Lucida Sans" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Customer details :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="30" width="80" height="20" uuid="5534efab-989c-45fa-9c99-5be7f236d16f"/>
+				<textElement>
+					<font fontName="Lucida Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Customer name :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="50" width="80" height="20" uuid="9f330e0c-39e9-49e2-8220-82f8dacacfc6"/>
+				<textElement>
+					<font fontName="Lucida Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Customer address :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="30" width="80" height="20" uuid="f6964ee6-c646-497f-9ddf-b070cc483edd"/>
+				<textElement>
+					<font fontName="Lucida Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Phone no1 :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="50" width="80" height="20" uuid="b14cae42-df6c-465e-a973-318b1064e768"/>
+				<textElement>
+					<font fontName="Lucida Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Phone_no2 :
+]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="110" y="30" width="180" height="20" uuid="4ecf64bf-51bd-4b37-b512-9752f4cf1b76"/>
+				<textFieldExpression><![CDATA[$P{Parameter1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="50" width="180" height="20" uuid="263ac4ad-4e65-497d-bfcb-cbf456089bf4"/>
+				<textFieldExpression><![CDATA[$P{Parameter2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="30" width="90" height="20" uuid="1179145f-bbcd-4d32-976e-e4c2adec781b"/>
+				<textFieldExpression><![CDATA[$P{Parameter3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="50" width="90" height="20" uuid="7caea0a5-c9ce-4c7d-9d49-8b7ff6a38c3c"/>
+				<textFieldExpression><![CDATA[$P{Parameter4}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="210" y="130" width="198" height="30" backcolor="#70BCFA" uuid="66907426-d02d-4bdf-9ba5-49194aaefca0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="21b1fb39-306f-4219-85a9-94ee89a7cd4e"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Lucida Sans" size="11"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="18" y="130" width="110" height="30" backcolor="#70BCFA" uuid="8ceea8e5-44a0-4fc3-8dc1-7177fdf5296a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d65399f8-2f1f-41a8-bd75-ae4e1696f44a"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Lucida Sans" size="11"/>
+				</textElement>
+				<text><![CDATA[Order number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="128" y="130" width="82" height="30" backcolor="#70BCFA" uuid="1ee9bfad-1224-4367-b833-9205e778d300">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="84cebc75-cd38-49d5-9ea2-88dda6ca2458"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Lucida Sans" size="11"/>
+				</textElement>
+				<text><![CDATA[item_code
+
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="408" y="130" width="130" height="30" backcolor="#70BCFA" uuid="f0b14f11-ca0f-4fbb-ba3d-ccf2af80cb2f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="21b1fb39-306f-4219-85a9-94ee89a7cd4e"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Lucida Sans" size="11"/>
+				</textElement>
+				<text><![CDATA[Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="70" width="80" height="20" uuid="fa01526f-a683-4091-83ac-e26f23ad5f07"/>
+				<textElement>
+					<font fontName="Lucida Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="110" y="70" width="180" height="20" uuid="aa48919a-0fc6-4671-9ad5-cf4b349f9e23"/>
+				<textFieldExpression><![CDATA[$P{Parameter9}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="460" y="5" width="115" height="97" uuid="78092fdc-845d-4a0f-a839-def4ae83d7cf"/>
+			</rectangle>
+			<textField>
+				<reportElement x="460" y="38" width="120" height="30" forecolor="#4C4C4D" uuid="c833cd64-3e6d-45c3-8135-4e919a5966d5"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font fontName="Lucida Console" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Parameter10}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="470" y="10" width="95" height="12" uuid="cee21d9c-3f82-437e-83fb-1b72772e41c0"/>
+				<textElement>
+					<font fontName="Lucida Sans" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Status]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="60" splitType="Stretch">
+			<textField textAdjust="StretchHeight">
+				<reportElement x="210" y="4" width="198" height="56" uuid="a7fdb65f-0703-4c77-9fd1-f0da6c0b4bfc"/>
+				<box>
+					<bottomPen lineWidth="1.0" lineColor="#030303"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{Parameter5}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="128" y="4" width="82" height="56" uuid="0a1e7d10-a6de-450a-9443-7ed658d379d5"/>
+				<box>
+					<bottomPen lineWidth="1.0" lineColor="#030303"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{Parameter6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="FixRelativeToBottom" x="18" y="4" width="110" height="56" uuid="81e35d98-83fb-42ee-8705-e0d1bf9a2616"/>
+				<box>
+					<bottomPen lineWidth="1.0" lineColor="#030303"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{Parameter7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="FixRelativeToBottom" x="408" y="4" width="130" height="56" uuid="2fa1f817-5df6-42a4-be7b-27dba6dad42c"/>
+				<box>
+					<bottomPen lineWidth="1.0" lineColor="#030303"/>
+				</box>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{Parameter8}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="26" splitType="Stretch">
+			<textField>
+				<reportElement x="528" y="0" width="42" height="25" uuid="8d7db603-cb1b-4fde-adc6-2b6689e19414"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="120" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="50" width="554" height="70" uuid="d89c2a41-71b4-4bf1-861b-e98e459abb29"/>
+				<text><![CDATA[✒️We provide warranty on every item sold by our company and warranty time varies from item to item. It is your responsibility to ask one of our customer service officers when you place your order for the item you purchase and to get the responsibility of any item you bought to our company by registered mail or courier Should be sent through a facilitating company or You have to come and deliver and afford the transportation cost. Kindly note that those who buy goods from us are tied to these obligations and conditions. Thank you !]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="10" width="100" height="30" uuid="532a5ddb-d312-45d7-b7f9-91764133a135"/>
+				<textElement rotation="None">
+					<font size="21"/>
+				</textElement>
+				<text><![CDATA[Warrenty !]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

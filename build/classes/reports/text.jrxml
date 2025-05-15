@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="text" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ce47ac64-33e4-4c34-8e64-940c5a06eb51">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<parameter name="Parameter1" class="java.lang.String"/>
+	<parameter name="Parameter2" class="java.lang.String"/>
+	<parameter name="Parameter3" class="java.lang.String"/>
+	<parameter name="Parameter4" class="java.lang.String"/>
+	<parameter name="Parameter5" class="java.lang.String"/>
+	<parameter name="Parameter6" class="java.lang.String"/>
+	<parameter name="Parameter7" class="java.lang.String"/>
+	<parameter name="Parameter8" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="COLUMN_0" class="java.lang.String"/>
+	<field name="COLUMN_1" class="java.lang.String"/>
+	<field name="COLUMN_2" class="java.lang.String"/>
+	<field name="COLUMN_3" class="java.lang.String"/>
+	<field name="COLUMN_4" class="java.lang.String"/>
+	<field name="COLUMN_5" class="java.lang.String"/>
+	<field name="COLUMN_6" class="java.lang.String"/>
+	<field name="COLUMN_7" class="java.lang.Double"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="151" splitType="Stretch">
+			<staticText>
+				<reportElement x="105" y="60" width="345" height="30" forecolor="#464763" uuid="23acba2f-fb55-4053-9f6e-7922d5b0748d"/>
+				<textElement textAlignment="Center">
+					<font fontName="Lucida Sans" size="20"/>
+				</textElement>
+				<text><![CDATA[Lanka Shopping Emporium]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="90" width="290" height="21" uuid="686c674f-e829-4553-b0b4-cce38be2e527"/>
+				<textElement>
+					<font fontName="Lucida Sans" size="12"/>
+				</textElement>
+				<text><![CDATA[2884 Wexford Way , Columbia , South Carolina        ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="111" width="271" height="21" uuid="8606b036-224c-495d-b446-87cdca8484f7"/>
+				<textElement>
+					<font fontName="Lucida Sans" size="11"/>
+				</textElement>
+				<text><![CDATA[Phone : +94773441062 Email :lse@gmail.com]]></text>
+			</staticText>
+			<image hAlign="Center">
+				<reportElement stretchType="ElementGroupHeight" x="0" y="-40" width="555" height="140" uuid="68dd864b-6333-47d9-8ec9-af8c24d241e7"/>
+				<imageExpression><![CDATA["C:/Users/CHAMA COMPUTERS/Documents/NetBeansProjects/Project_epal/src/resources/logo2-removebg-preview.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35">
+			<rectangle>
+				<reportElement mode="Opaque" x="-20" y="4" width="595" height="18" forecolor="#FFFFFF" backcolor="#70BCFA" uuid="a93d4a29-3a04-466f-a95c-5a51f60727e5"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="380" y="4" width="41" height="18" forecolor="#FFFFFF" uuid="4d45b79e-4688-47fa-afa3-ab46816c35df"/>
+				<textElement>
+					<font fontName="Lucida Sans" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date :]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="430" y="4" width="100" height="18" forecolor="#FFFFFF" uuid="09e79c72-2b51-42f9-9c84-80462eb49bab"/>
+				<textElement>
+					<font fontName="Lucida Sans" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="40" y="4" width="100" height="18" forecolor="#FFFFFF" uuid="f7eb0a93-e162-4a69-a9d0-7cbb80e4d7aa"/>
+				<textFieldExpression><![CDATA[$P{Parameter8}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-11" y="4" width="41" height="18" forecolor="#FFFFFF" uuid="192a613a-0776-40a6-8c60-811b7b0bf21f"/>
+				<textElement>
+					<font fontName="Lucida Sans" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GRN id]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="162">
+			<rectangle>
+				<reportElement x="-20" y="5" width="200" height="97" uuid="ebc931b0-6fd9-4d2b-80da-6fc76f554bee"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="180" y="5" width="395" height="97" uuid="3249d158-e57d-4285-b8e5-23ac1407b5df"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="190" y="7" width="120" height="12" uuid="ec95390e-cb47-4089-aa85-0a90f186d3b7"/>
+				<textElement>
+					<font fontName="Lucida Sans" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Supplier Details]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="29" width="70" height="20" uuid="5534efab-989c-45fa-9c99-5be7f236d16f"/>
+				<textElement>
+					<font fontName="Lucida Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Supplier id :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="49" width="80" height="20" uuid="9f330e0c-39e9-49e2-8220-82f8dacacfc6"/>
+				<textElement>
+					<font fontName="Lucida Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Supplier name :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="70" width="80" height="20" uuid="f6964ee6-c646-497f-9ddf-b070cc483edd"/>
+				<textElement>
+					<font fontName="Lucida Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Supplier mobile :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="390" y="30" width="80" height="20" uuid="b14cae42-df6c-465e-a973-318b1064e768"/>
+				<textElement>
+					<font fontName="Lucida Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[Supplier Branch :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="290" y="29" width="90" height="20" uuid="4ecf64bf-51bd-4b37-b512-9752f4cf1b76"/>
+				<textFieldExpression><![CDATA[$P{Parameter1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="290" y="50" width="90" height="20" uuid="263ac4ad-4e65-497d-bfcb-cbf456089bf4"/>
+				<textFieldExpression><![CDATA[$P{Parameter2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="290" y="70" width="90" height="20" uuid="1179145f-bbcd-4d32-976e-e4c2adec781b"/>
+				<textFieldExpression><![CDATA[$P{Parameter3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="30" width="100" height="20" uuid="7caea0a5-c9ce-4c7d-9d49-8b7ff6a38c3c"/>
+				<textFieldExpression><![CDATA[$P{Parameter4}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="-20" y="132" width="85" height="30" backcolor="#70BCFA" uuid="66907426-d02d-4bdf-9ba5-49194aaefca0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="21b1fb39-306f-4219-85a9-94ee89a7cd4e"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Lucida Sans" size="11"/>
+				</textElement>
+				<text><![CDATA[Category]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="65" y="132" width="83" height="30" backcolor="#70BCFA" uuid="8ceea8e5-44a0-4fc3-8dc1-7177fdf5296a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d65399f8-2f1f-41a8-bd75-ae4e1696f44a"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Lucida Sans" size="11"/>
+				</textElement>
+				<text><![CDATA[Product id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="148" y="132" width="82" height="30" backcolor="#70BCFA" uuid="1ee9bfad-1224-4367-b833-9205e778d300">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="84cebc75-cd38-49d5-9ea2-88dda6ca2458"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Lucida Sans" size="11"/>
+				</textElement>
+				<text><![CDATA[Brand]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="230" y="132" width="95" height="30" backcolor="#70BCFA" uuid="aed78cef-9b1e-4510-982d-618cb6035596">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f95cdd7d-c5a4-45a9-840b-2ae11dac73af"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Lucida Sans" size="11"/>
+				</textElement>
+				<text><![CDATA[Product name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="325" y="132" width="85" height="30" backcolor="#70BCFA" uuid="8e31ff1b-eed1-4c5a-b163-6fb6de877c64">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="48ebc814-1e26-4ebd-8978-5b8a692483df"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Lucida Sans" size="11"/>
+				</textElement>
+				<text><![CDATA[Quantity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="410" y="132" width="90" height="30" backcolor="#70BCFA" uuid="68007fac-99fb-4361-997c-3e5d81e1e3c4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4d7350e9-5d38-4f87-8a8b-04068a421e02"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Lucida Sans" size="11"/>
+				</textElement>
+				<text><![CDATA[Buying price]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="500" y="132" width="75" height="30" backcolor="#70BCFA" uuid="6a946f14-3abc-4734-be7c-47a247d809b3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7d4570aa-0e59-49e9-9de4-b269ea658e5c"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Lucida Sans" size="11"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="33" splitType="Stretch">
+			<textField>
+				<reportElement x="-20" y="2" width="85" height="30" uuid="7d83f2b1-b475-478c-a78e-e12d6fdea3d9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="21b1fb39-306f-4219-85a9-94ee89a7cd4e"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="1.5" lineStyle="Solid"/>
+					<topPen lineWidth="1.5" lineStyle="Solid" lineColor="#FFFFFF"/>
+					<leftPen lineWidth="1.5" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.5" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.5" lineStyle="Solid" lineColor="#FFFFFF"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="65" y="2" width="83" height="30" uuid="ed379d3c-45e3-4b70-9936-d8d9eb8f265e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d65399f8-2f1f-41a8-bd75-ae4e1696f44a"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="1.5" lineStyle="Solid"/>
+					<topPen lineColor="#FFFFFF"/>
+					<leftPen lineColor="#FFFFFF"/>
+					<rightPen lineColor="#FFFFFF"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="148" y="2" width="82" height="30" uuid="093049d0-dd2b-4348-841c-9fcdeb0534ae">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="84cebc75-cd38-49d5-9ea2-88dda6ca2458"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="1.5" lineStyle="Solid"/>
+					<topPen lineColor="#FFFFFF"/>
+					<leftPen lineColor="#FFFFFF"/>
+					<rightPen lineColor="#FFFFFF"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="230" y="2" width="95" height="30" uuid="f7f635f8-4235-4724-bd28-276d50af82d7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f95cdd7d-c5a4-45a9-840b-2ae11dac73af"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="1.5" lineStyle="Solid"/>
+					<topPen lineColor="#FFFFFF"/>
+					<leftPen lineColor="#FFFFFF"/>
+					<rightPen lineColor="#FFFFFF"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="325" y="2" width="85" height="30" uuid="28e7558a-9a78-4b39-a1a4-9994b51b6d8e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="48ebc814-1e26-4ebd-8978-5b8a692483df"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="1.5" lineStyle="Solid"/>
+					<topPen lineColor="#FFFFFF"/>
+					<leftPen lineColor="#FFFFFF"/>
+					<rightPen lineColor="#FFFFFF"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="2" width="90" height="30" uuid="4c857d1d-f45a-4012-8bb7-35416bf53d6a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4d7350e9-5d38-4f87-8a8b-04068a421e02"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="1.5" lineStyle="Solid"/>
+					<topPen lineColor="#FFFFFF"/>
+					<leftPen lineColor="#FFFFFF"/>
+					<rightPen lineColor="#FFFFFF"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="500" y="2" width="75" height="30" uuid="36b77475-7db0-401c-ad56-b87c91e69e21">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b4d4fb4a-05bc-41b7-83c7-b588bf4b2a8c"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.5"/>
+					<topPen lineColor="#FFFFFF"/>
+					<leftPen lineColor="#FFFFFF"/>
+					<bottomPen lineColor="#030303"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{COLUMN_7}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="185" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="390" y="9" width="102" height="25" backcolor="#70BCFA" uuid="17a5b3d1-fb65-4a92-9312-9b350dff06bb"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#70BCFA"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Lucida Sans"/>
+				</textElement>
+				<text><![CDATA[Grand total]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="492" y="10" width="79" height="24" uuid="a7fdb65f-0703-4c77-9fd1-f0da6c0b4bfc"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$P{Parameter5}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="390" y="34" width="102" height="24" backcolor="#70BCFA" uuid="ff85af06-facd-44c5-9b6b-fbd4b3a666b4"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#70BCFA"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#70BCFA"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Lucida Sans"/>
+				</textElement>
+				<text><![CDATA[Payment recived]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="492" y="34" width="79" height="24" uuid="c2b19f8d-4fcb-4b80-a445-a76c7e752532"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$P{Parameter6}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="390" y="58" width="102" height="25" backcolor="#70BCFA" uuid="5998bedd-586e-44a6-a03e-7eb8afbcd1eb"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#70BCFA"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Lucida Sans"/>
+				</textElement>
+				<text><![CDATA[Due amount]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="492" y="58" width="79" height="25" uuid="da9cb975-4091-419f-9ae6-7ecdce0da563"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$P{Parameter7}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="-20" y="110" width="595" height="69" uuid="e925c96a-8b2d-4da5-87c0-24859daa3717"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="100" y="163" width="102" height="16" uuid="6b9efaed-8168-49df-bbf1-c6e5df9e32ca"/>
+				<textElement textAlignment="Center">
+					<font fontName="Lucida Sans"/>
+				</textElement>
+				<text><![CDATA[Billed by]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="340" y="162" width="102" height="16" uuid="14abbced-1c06-4a73-880f-5965631e7dd2"/>
+				<textElement textAlignment="Center">
+					<font fontName="Lucida Sans"/>
+				</textElement>
+				<text><![CDATA[Stock manager]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="163" width="102" height="16" uuid="a23e4d20-2e97-44c3-9303-10a22ef63c3c"/>
+				<textElement textAlignment="Center">
+					<font fontName="Lucida Sans"/>
+				</textElement>
+				<text><![CDATA[Checked by]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-20" y="163" width="102" height="16" uuid="1c630186-005d-417a-b98d-469fd05adcc3"/>
+				<textElement textAlignment="Center">
+					<font fontName="Lucida Sans"/>
+				</textElement>
+				<text><![CDATA[Supplier]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="469" y="162" width="102" height="16" uuid="3bc5dda5-2ecc-4b06-97aa-b663334087ca"/>
+				<textElement textAlignment="Center">
+					<font fontName="Lucida Sans"/>
+				</textElement>
+				<text><![CDATA[Account manager]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="62" splitType="Stretch">
+			<textField>
+				<reportElement x="533" y="30" width="42" height="30" uuid="8d7db603-cb1b-4fde-adc6-2b6689e19414"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="53" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_Letter_Landscape" language="javascript" printOrder="Horizontal" pageWidth="420" pageHeight="297" columnWidth="420" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="9978b603-2b9c-4f3e-a86d-d8965731cecc">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="cm"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="cm"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="cm"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="cm"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="cm"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="cm"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="cm"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="cm"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="cm"/>
+	<parameter name="Parameter1" class="java.lang.String"/>
+	<parameter name="Parameter2" class="java.lang.String"/>
+	<parameter name="Parameter3" class="java.lang.String"/>
+	<parameter name="Parameter4" class="java.lang.String"/>
+	<parameter name="Parameter5" class="java.lang.String"/>
+	<parameter name="Parameter6" class="java.lang.String"/>
+	<parameter name="Parameter7" class="java.lang.String"/>
+	<parameter name="Parameter8" class="java.lang.String"/>
+	<parameter name="Parameter9" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<detail>
+		<band height="286" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout"/>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="110" y="118" width="71" height="21" uuid="77016ded-e2bc-450c-a7d2-db21cfb42904"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="182" y="118" width="51" height="21" uuid="31d4b49f-7ab7-45ef-8b4f-3eead4f5c49f"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="140" width="150" height="21" uuid="6e767463-fad4-4163-be09-751a69ed0417"/>
+				<textFieldExpression><![CDATA[$P{Parameter1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="168" width="100" height="40" uuid="adeac157-e602-4a7f-bcb1-910f4083b7ab"/>
+				<textFieldExpression><![CDATA[$P{Parameter2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="105" y="223" width="95" height="16" uuid="c42a9f1d-031a-4a71-9dad-003a03559d92"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[$P{Parameter3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="105" y="243" width="95" height="13" uuid="8fdc5b00-4891-4b88-b636-8d03c4e1b478"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[$P{Parameter4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="223" width="99" height="63" uuid="ba07f0c2-0dfc-4576-8c8c-8638020091f8"/>
+				<textElement textAlignment="Left" verticalAlignment="Top"/>
+				<textFieldExpression><![CDATA[$P{Parameter5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="318" y="98" width="100" height="20" uuid="ed9b949c-7ae6-4023-b9e0-68dda89f3f86"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{Parameter6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="310" y="120" width="99" height="23" uuid="388c90b7-149a-43fe-aa5c-e352c708a75e"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{Parameter7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="309" y="154" width="99" height="20" uuid="32b2f5b0-df89-4393-aaab-9dcff269f3d1"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{Parameter8}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="110" y="97" width="90" height="20" uuid="d020d66f-a9f2-4818-a216-18fb0231b656"/>
+				<text><![CDATA[0715429519]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="110" y="76" width="90" height="20" uuid="4e36b901-f5ed-4ed0-a05f-1ce4124a8eda"/>
+				<text><![CDATA[SaleSpot]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement x="298" y="50" width="89" height="41" uuid="557de54a-c0d5-4a79-857d-432adc8d25e8"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="2of7" drawText="false" checksumRequired="false">
+					<jr:codeExpression><![CDATA[$P{Parameter9}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<textField>
+				<reportElement x="306" y="69" width="77" height="18" uuid="85852aa8-ca8b-40eb-a052-9e7f02e179f8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{Parameter9}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
